@@ -12,15 +12,40 @@
         <h1 id="title"> Survey Form</h1>
         <p id="description">Thank you for taking the time to help us improve the platform</p>
         <form class="grid-item1" id="survey-form">
-            <h2 id="name">Name</h2>
+            <p id="name">Name</p>
             <input type="text" placeholder="Enter your name" id="name-label" required>
-            <h2 id="email">Email</h2>
+            <p id="email">Email</p>
             <input type="email" placeholder="Enter your Email" id="email-label" required>
-            <h2 id="number">Age(optional)</h2>
+            <p id="number">Age(optional)</p>
             <input type="number" min="1" max="99" id="number-label" placeholder="Enter your Age">
-            <h2> Which option best describes your current role?</h2>
-            <select for="role" id="dropdown">Select current role</select>
-            
+            <p> Which option best describes your current role?</p>
+            <select for="role" id="dropdown">
+                <option disabled  selected value>Select current role</option>
+                <option value="student">Student</option>
+                <option value="Full-time-job">Full time job</option>
+                <option value="Full-time-learner">Full time learner</option>
+                <option value="Perfer-not-to-say">Prefer no to say</option>
+                <option value="Other">Other</option>
+            </select>
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <input name="definitely" value="definitely" type="radio" class="input-radio" checked>definitely<br>
+            <input name="definitely" value="definitely" type="radio" class="input-radio" checked>Maybe<br>
+            <input name="definitely" value="definitely" type="radio" class="input-radio" checked>Not sure<br>
+            <p>What is your favorite feature of freeCodeCamp?</p>
+            <select for="role" id="dropdown">
+                <option disabled  selected value>Select an option</option>
+                <option value="challenges">challenges</option>
+                <option value="projects">projects</option>
+                <option value="community">community</option>
+                <option value="open-source">open source</option>
+            </select>
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <input name="prefer" type="checkbox"> front end projects
+            <input name="prefer" type="checkbox"> front end projects
+            <input name="prefer" type="checkbox"> front end projects
+            <input name="prefer" type="checkbox"> front end projects
+            <input name="prefer" type="checkbox"> front end projects
+            <input name="prefer" type="checkbox"> front end projects
         </form>
     </div>
     
