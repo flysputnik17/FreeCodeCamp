@@ -5,9 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Survey-Form</title>
 </head>
 <body>
+    <div class="grid-container">
+        <h1 id="title"> Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form class="grid-item1" id="survey-form">
+            <h2 id="name">Name</h2>
+            <input type="text" placeholder="Enter your name" id="name-label" required>
+            <h2 id="email">Email</h2>
+            <input type="email" placeholder="Enter your Email" id="email-label" required>
+            <h2 id="number">Age(optional)</h2>
+            <input type="number" min="1" max="99" id="number-label" placeholder="Enter your Age">
+            <h2> Which option best describes your current role?</h2>
+            <select for="role" id="dropdown">Select current role</select>
+            
+        </form>
+    </div>
     
 </body>
 </html>
