@@ -12,12 +12,12 @@
         <h1 id="title"> Survey Form</h1>
         <p id="description">Thank you for taking the time to help us improve the platform</p>
         <form class="grid-item1" id="survey-form">
-            <p id="name">Name</p>
-            <input class="form-1" type="text" placeholder="Enter your name" id="name-label" required>
-            <p id="email">Email</p>
-            <input class="form-1" type="email" placeholder="Enter your Email" id="email-label" required>
-            <p id="number">Age(optional)</p>
-            <input class="form-1" type="number" min="1" max="99" id="number-label" placeholder="Enter your Age">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" class="form-1" type="text" name=name placeholder="Enter your name" required>
+            <label id="email-label" for="email">Email</label>
+            <input id="email" class="form-1" type="email" placeholder="Enter your Email" id="email-label" required>
+            <label id="number-label" for="number">Age(optional)</label>
+            <input id="number" class="form-1" type="number" min="1" max="99" id="number-label" placeholder="Enter your Age">
             <p> Which option best describes your current role?</p>
             <select class="form-1" for="role" id="dropdown">
                 <option disabled  selected value>Select current role</option>
@@ -30,17 +30,17 @@
             <div id="recommend" class="form-group">
                 <p>Would you recommend freeCodeCamp to a friend?</p>
                 <label class="container">
-                    <input type="radio" checked="checked" name="radio">Definitely
+                    <input type="radio" checked="checked" name="radio" value=Definitely>Definitely
                     <br>
-                  </label>
-                  <label class="container">
-                    <input type="radio" checked="checked" name="radio">Maybe
+                </label>
+                <label class="container">
+                    <input type="radio" checked="checked" name="radio" value=Maybe>Maybe
                     <br>
-                  </label>
-                  <label class="container">
-                    <input type="radio" checked="checked" name="radio">Not sure
+                </label>
+                <label class="container">
+                    <input type="radio" checked="checked" name="radio" value=Not sure>Not sure
                     <br>
-                  </label>
+                </label>
             </div>
             <div id="user-prefer" class="form-group">
                 <p>What is your favorite feature of freeCodeCamp?</p>
@@ -70,7 +70,7 @@
                 <p>Any comments or suggestions?</p>
                 <textarea id="textarea" class="input-textarea" placeholder="Enter your comments here..." name="comment"rows="8" cols="94"></textarea>
             </div>
-            <div class="btn-submit" id="submit">
+            <div class="btn-submit" >
                 <button type="submit" id="submit" class="btn-submit">Submit</button>
             </div>
         </form>
