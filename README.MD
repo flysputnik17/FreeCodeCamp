@@ -1,0 +1,1 @@
+FreeCodeCamp mini projects and exercise
